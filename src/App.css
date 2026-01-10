@@ -1,6 +1,10 @@
 /* Google Font */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
 
+html, body {
+  overflow-x: hidden;
+}
+
 /* 🌙 Global Dark Theme */
 body {
   margin: 0;
@@ -56,14 +60,25 @@ body {
 
 @media (max-width: 768px) {
   .navbar {
+    flex-direction: column;
+    align-items: flex-start;
     padding: 15px 20px;
   }
 
   .navbar ul {
-    gap: 15px;
-    font-size: 14px;
+    width: 100%;
+    justify-content: space-between;
+    margin-top: 10px;
+    padding: 0;
+    gap: 10px;
+    font-size: 13px;
+  }
+
+  .navbar h2 {
+    font-size: 18px;
   }
 }
+
 
 
 /* Hero */
@@ -111,18 +126,18 @@ body {
 @media (max-width: 768px) {
   .hero {
     padding: 30px 20px;
+    align-items: center;
   }
 
-  .hero-card {
-    padding: 35px 25px;
+  .hero-card,
+  .about-card {
+    width: 100%;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 25px 20px;
   }
-
   .hero h1 {
     font-size: 30px;
-  }
-
-  .hero p {
-    font-size: 15px;
   }
 
   .hero-buttons {
@@ -133,6 +148,15 @@ body {
   .profile-image {
     width: 110px;
     height: 110px;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero p,
+  .about-text {
+    font-size: 14px;
+    line-height: 1.6;
+    text-align: left;
   }
 }
 
@@ -197,13 +221,17 @@ body {
   font-size: 34px;
   margin-bottom: 50px;
 }
+@media (max-width: 768px) {
+  .section {
+    padding: 40px 12px !important;
+  }
+}
+
 
 
 /* About Section */
 .about-card {
-  max-width: 900px;
   margin: 0 auto;
-  padding: 40px 45px;
   background: rgba(30, 41, 59, 0.85);
   border-radius: 22px;
   box-shadow: 0 20px 45px rgba(0,0,0,0.5);
@@ -217,12 +245,14 @@ body {
 }
 
 @media (max-width: 768px) {
-  .about-card {
-    padding: 30px 25px;
+  .about-highlights {
+    grid-template-columns: 1fr !important;
+    width: 100%;
   }
 
-  .about-highlights {
-    grid-template-columns: 1fr;
+  .about-highlights div {
+    width: 100%;
+    box-sizing: border-box;
   }
 }
 
@@ -304,7 +334,6 @@ body {
 }
 
 
-
 /* Content */
 .project-content {
   padding: 24px;
@@ -369,7 +398,6 @@ body {
 }
 
 
-
 /* Skills Section */
 .skills-grid {
   display: grid;
@@ -384,9 +412,9 @@ body {
   text-align: center;
   font-weight: 500;
   border-radius: 16px;
-  background: rgba(255, 255, 255, 0.7);
+  background: #343442;
   backdrop-filter: blur(10px);
-  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+  color: #e5e7eb;
   transition: all 0.3s ease;
   cursor: default;
 }
@@ -394,14 +422,7 @@ body {
 .skill-card:hover {
   transform: translateY(-6px) scale(1.03);
   box-shadow: 0 15px 35px rgba(79,70,229,0.25);
-  color: #4f46e5;
-}
-
-.skill-card,
-.project-card {
-  background: rgba(30, 41, 59, 0.85);
-  color: #e5e7eb;
-  box-shadow: 0 12px 30px rgba(0,0,0,0.5);
+  color: #817dd0;
 }
 
 @media (max-width: 768px) {
@@ -410,7 +431,6 @@ body {
     gap: 15px;
   }
 }
-
 
 
 /* Contact Section */
@@ -442,6 +462,9 @@ body {
   text-decoration: none;
   font-size: 16px;
   color: #e5e7eb;
+  display: flex;
+  align-items: center;
+  gap: 14px;
   background: rgba(99,102,241,0.15);
   padding: 14px 20px;
   border-radius: 14px;
@@ -455,14 +478,27 @@ body {
 
 @media (max-width: 768px) {
   .contact-card {
-    padding: 30px 25px;
-  }
-
-  .contact-info a {
-    font-size: 14px;
+    width: 100%;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 24px 16px;
+    box-sizing: border-box;
   }
 }
 
+@media (max-width: 768px) {
+  .contact-info a {
+    width: 100%;
+    box-sizing: border-box;
+    font-size: 14px;
+    padding: 12px 14px;
+  }
+}
+
+
+.contact-icon {
+  min-width: 20px;
+}
 
 /* SVG Icons */
 .contact-info a {

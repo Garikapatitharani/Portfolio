@@ -21,7 +21,7 @@ function Contact() {
 
           {/* LinkedIn */}
           <a
-            href="https://www.linkedin.com/in/yourprofile"
+            href="https://www.linkedin.com/in/tharani-garikapati"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -33,7 +33,7 @@ function Contact() {
 
           {/* GitHub */}
           <a
-            href="https://github.com/yourusername"
+            href="https://github.com/Garikapatitharani"
             target="_blank"
             rel="noopener noreferrer"
           >
