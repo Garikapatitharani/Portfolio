@@ -269,6 +269,19 @@ body {
 }
 
 /* ===================== SKILLS ===================== */
+.skills-subtitle {
+  text-align: center;
+  margin: 40px 0 20px;
+  font-size: 20px;
+  color: #c7d2fe;
+}
+
+/* Soft skills slightly different color */
+.soft-card {
+  background: rgba(99,102,241,0.12);
+  border: 1px solid rgba(99,102,241,0.3);
+}
+
 
 .skills-grid {
   display: grid;
