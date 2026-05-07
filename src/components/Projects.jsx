@@ -21,15 +21,15 @@ function Projects() {
     },
     {
       title: "Employee Management System",
-      // image: employeeMS, // replace with your actual imported image variable
+      image: null,
       desc: "Django-based Employee Management System with CRUD operations for employee and department management using Django ORM and MySQL.",
       tech: ["Python", "Django", "MySQL", "Django ORM"],
-      // github: "https://github.com/Garikapatitharani/employee-management-system", // update with actual repo URL
-      // live: "" // add deployment link when available, or remove this line
+      github: null,
+      live: null
     },
   ]
 
-   return (
+  return (
     <section id="projects" className="section">
       <h2 className="section-title">Projects</h2>
 
@@ -37,44 +37,44 @@ function Projects() {
         {projects.map((project, index) => (
           <div className="project-card" key={index}>
 
-            {/* Project Image */}
             <div className="project-image-wrapper">
-              <img
-                src={project.image}
-                alt={project.title}
-                className="project-image"
-              />
+              {project.image ? (
+                <img
+                  src={project.image}
+                  alt={project.title}
+                  className="project-image"
+                />
+              ) : (
+                <div className="project-image-placeholder">
+                  🖼️ Screenshot coming soon
+                </div>
+              )}
             </div>
 
-            {/* Project Content */}
             <div className="project-content">
               <h3>{project.title}</h3>
               <p>{project.desc}</p>
 
-              {/* Tech Stack */}
               <div className="tech-icons">
                 {project.tech.map((tech, i) => (
                   <span key={i}>{tech}</span>
                 ))}
               </div>
 
-              {/* Links */}
               <div className="project-links">
-                <a
-                  href={project.github}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  GitHub
-                </a>
-
-                <a
-                  href={project.live}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  Live
-                </a>
+                {project.github && (
+                  <a href={project.github} target="_blank" rel="noopener noreferrer">
+                    GitHub
+                  </a>
+                )}
+                {project.live && (
+                  <a href={project.live} target="_blank" rel="noopener noreferrer">
+                    Live
+                  </a>
+                )}
+                {!project.github && !project.live && (
+                  <span style={{fontSize: "12px", opacity: 0.6}}>Links coming soon</span>
+                )}
               </div>
             </div>
 

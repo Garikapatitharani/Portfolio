@@ -5,7 +5,7 @@ function About() {
 
       <div className="about-card">
         <p className="about-text">
-          I am a <strong>Frontend-focused Web Developer</strong> with a background in
+          I am a <strong>Python Full Stack Developer</strong> with a background in
           <strong> Electronics and Communication Engineering</strong>. I enjoy building
           modern, responsive web applications and transforming ideas into clean user
           interfaces.
