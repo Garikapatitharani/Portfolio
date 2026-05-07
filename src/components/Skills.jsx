@@ -7,7 +7,9 @@ function Skills() {
     "Python",
     "MySQL",
     "Git",
-    "GitHub"
+    "GitHub",
+    "Django",
+    "REST Framework"
   ];
 
   const softSkills = [

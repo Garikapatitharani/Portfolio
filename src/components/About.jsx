@@ -20,7 +20,7 @@ function About() {
         <div className="about-highlights">
           <div>💻 Frontend Development (React, JavaScript)</div>
           <div>🛠️ UI Design & Responsive Layouts</div>
-          <div>📊 Backend Basics (Python, MySQL)</div>
+          <div>📊 Backend Development (Python, MySQL)</div>
           <div>🚀 Always eager to learn new technologies</div>
         </div>
       </div>

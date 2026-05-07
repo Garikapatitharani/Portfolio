@@ -16,7 +16,7 @@ function Home() {
         </h1>
 
         <p>
-          Frontend-focused Web Developer building modern, responsive
+          Python Full Stack Developer building modern, responsive
           web applications using React.
         </p>
 
