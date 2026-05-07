@@ -21,11 +21,11 @@ function Projects() {
     },
     {
       title: "Employee Management System",
-      image: employeeMS, // replace with your actual imported image variable
+      // image: employeeMS, // replace with your actual imported image variable
       desc: "Django-based Employee Management System with CRUD operations for employee and department management using Django ORM and MySQL.",
       tech: ["Python", "Django", "MySQL", "Django ORM"],
-      github: "https://github.com/Garikapatitharani/employee-management-system", // update with actual repo URL
-      live: "" // add deployment link when available, or remove this line
+      // github: "https://github.com/Garikapatitharani/employee-management-system", // update with actual repo URL
+      // live: "" // add deployment link when available, or remove this line
     },
   ]
 
