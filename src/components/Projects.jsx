@@ -1,5 +1,6 @@
 import mealFinder from "../assets/projects/meal-finder.png"
 import techShop from "../assets/projects/techshop.png"
+import Employee from '../assets/projects/Employee.png'
 
 function Projects() {
   const projects = [
