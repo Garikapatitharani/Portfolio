@@ -21,11 +21,10 @@ function Projects() {
     },
     {
       title: "Employee Management System",
-      image: null,
+      image: Employee,
       desc: "Django-based Employee Management System with CRUD operations for employee and department management using Django ORM and MySQL.",
       tech: ["Python", "Django", "MySQL", "Django ORM"],
-      github: null,
-      live: null
+      github: "https://github.com/Garikapatitharani/Employee_Management.git",
     },
   ]
 
